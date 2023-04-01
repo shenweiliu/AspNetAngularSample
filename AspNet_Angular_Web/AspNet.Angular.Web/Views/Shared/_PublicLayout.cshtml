@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+    ViewBag.BodyCssClass = "with-side-navigation";
+    
+    ViewBag.Title = ViewBag.Title + "  | Test Sample";
+}
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+                      
+    </div>    
+</nav>
+<div id="main-wrapper">
+    <div id="content-wrapper">            
+        <div class="view-animation-container" role="main">
+            <div class="view-animation">
+                <div class="content-body">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>           
+    </div>
+</div>
+@section baseScripts {    
+    @RenderSection("scripts", required: false)
+}
+
+

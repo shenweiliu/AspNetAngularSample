@@ -1,0 +1,41 @@
+﻿@{
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+    ViewBag.BodyCssClass = "logged-in";
+}
+<div id="main-wrapper">
+    @Html.Partial("_Menu")
+    <div id="content-wrapper">
+        @Html.Partial("_Header")
+        <div class="view-animation-container">
+            <div class="view-animation">
+                @*<div class="content-body">*@
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+                @*</div>*@
+            </div>
+        </div>
+        <a href="#top" class="back-to-top" back-to-top="back-to-top-is-visible" offset="90" du-smooth-scroll role="link">Scroll to Top</a>
+    </div>
+</div>
+
+@section baseScripts {
+    @if (ViewBag.AngularModuleLoader != null)
+    {
+        if (ViewBag.AngularModuleLoader == "cli")
+        {
+            @Scripts.Render("~/bundles/ngCLI")
+        }
+        else if (ViewBag.AngularModuleLoader == "debug")
+        {
+            @Scripts.Render("~/bundles/ngSystemJS")
+        }
+    }
+
+    @RenderSection("scripts", required: false)
+}
+
