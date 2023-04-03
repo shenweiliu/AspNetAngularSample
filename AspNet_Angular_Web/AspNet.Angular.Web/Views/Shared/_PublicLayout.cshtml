@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+    ViewBag.BodyCssClass = "with-side-navigation";
+    
+    ViewBag.Title = ViewBag.Title + "  | ASP.NET Angular";
+}
+<style>
+    .side-nav-adj {
+       padding-top: 90px !important;
+    }
+</style>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">                      
+    </div>    
+</nav>
+<div id="main-wrapper">
+    <div id="content-wrapper" class="side-nav-adj">            
+        <div class="view-animation-container" role="main">
+            <div class="view-animation">
+                <div class="content-body">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>           
+    </div>
+</div>
+@section baseScripts {    
+    @RenderSection("scripts", required: false)
+}
+
+

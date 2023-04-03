@@ -1,0 +1,40 @@
+﻿@model string
+@{
+    var domainHelper = new DomainHelper(Context.Request);
+}
+<ul class="@Model">
+    <li uib-dropdown>
+        <a uib-dropdown-toggle>Company</a>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu">
+            <li><a href="@domainHelper.DccRoot/AboutUs">About Direct Capital</a></li>            
+            <li><a href="@domainHelper.DccRoot/News">News</a></li>
+            <li><a href="@domainHelper.DccRoot/WhatWeFinance">What We Finance</a></li>
+            <li><a href="http://blog.directcapital.com/">Blog</a></li>
+            <li><a href="https://cit.csod.com/ats/careersite/search.aspx?site=2&amp;c=cit">Careers</a></li>
+
+        </ul>
+    </li>
+    <li uib-dropdown>
+        <a id="dLabel" uib-dropdown-toggle>Our Financing</a>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu">
+            <li><a href="@domainHelper.DccRoot/FinancingOptions">Financing Options</a></li>
+            <li><a href="@domainHelper.DccRoot/EquipmentFinancing">Equipment Financing</a></li>
+            <li><a href="@domainHelper.DccRoot/WorkingCapital">Working Capital</a></li>
+            <li><a href="@domainHelper.DccRoot/FranchiseFinancing">Franchise Financing</a></li>
+            <li><a href="@domainHelper.DccRoot/OfferFinancing">Offer Financing</a></li>
+        </ul>
+    </li>
+    <li><a class="apply-link" data-ga-navigate="Application|Initiated|from Header|10" href="@domainHelper.OfcRoot">Apply Now</a></li>
+    <li uib-dropdown class="user-links">
+        <a id="dLabel" uib-dropdown-toggle>Login</a>
+        <ul uib-dropdown-menu class="second dropdown-menu" role="menu">
+            <li>
+                <a class="login-link" href="@domainHelper.CustomerRoot?referrer=dcc">Login</a>
+            </li>
+            <li>
+                <a href='@(DomainHelper.GetRemarkableRoot(Context.Request) + "/registration?referrer=dcc")'>Sign Up</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+ 
