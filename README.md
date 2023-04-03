@@ -6,7 +6,7 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
 1. Visual Studio 2019 or 2022 (any version should work but latest versions are recommended).
 
-2. [TypeScript 4.0 for Visual Studio](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-40) if the 4.0 folder is not in your *C:\Program Files (x86)\Microsoft SDKs\TypeScript\* path.
+2. [TypeScript 4.0 for Visual Studio](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-40) if the "4.0" folder is not in your *C:\Program Files (x86)\Microsoft SDKs\TypeScript\* path.
 
 3. [node.js](https://nodejs.org/en/) (recommended version 14.15.3 - version 15.xx or above may not be compatible with Angular CLI 11). The corresponding LTS version of the npm is auto installed globally.
 
