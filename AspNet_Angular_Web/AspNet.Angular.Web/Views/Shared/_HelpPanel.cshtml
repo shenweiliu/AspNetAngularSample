@@ -1,0 +1,56 @@
+﻿@model string
+    @{
+        var tracker = String.IsNullOrEmpty(Model) ? null : Model;
+    }
+
+@{
+    var fallbackId = PortalHelpers.GetCurrentOrFallbackOrganizationId();
+}
+@if (fallbackId != null)
+{
+    <div class="row">
+        <div class="col-lg-12 col-sm-6 col-xs-12">
+            <a analytics-click-tracker="@tracker" href="@Url.Action("Index", "CustomerService")" class="promo-small promo-customer-service">
+
+                <article class="promo">
+                    <div class="promo-left">
+                        <h4>
+                            Got Questions? We've Got Answers
+                        </h4>
+                        <p>
+                            The answers to our most commonly asked questions are at your fingertips.
+                        </p>
+                        <div class="promo-link">Get Help</div>
+                    </div>
+                    <div class="promo-right">
+                        <div class="promo-image"></div>
+                    </div>
+                </article>
+                <div class="promo-highlight"></div>
+            </a>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class="col-lg-12 col-sm-6 col-xs-12">
+            <div class="panel panel-info panel-side">
+                <div class="panel-heading">
+                    <div class="panel-title">Need Help?</div>
+                </div>
+                <div class="panel-body contact-info">
+
+                    <h5>
+                        1 (800) 253-0157<br>
+                        <small>M-F: 8:30 am - 5:30 pm EST</small>
+                    </h5>
+                    <p>
+                        <a href="mailto:customerservice@directcapital.com" target="_new">customerservice@directcapital.com</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
