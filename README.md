@@ -70,6 +70,6 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
 ### Other Notes
 
-This sample is built based on the real-world operating website. One of the purposes is to provide the sample to Microsoft for troubleshooting reported issues with Visual Studio 2022. The sample uses the .NET Framework 4.6.1, ASP.NET MVC 5, and Angular 11. Currently, there is no any plan for upgrading the Areas Plugin structures and Angular, such as .NET Core 6 and Angular 14, respectively.
+This sample is built based on a real-world well-operated website although the functionality is reduced to basic Angular component loading workflow for demonstratons. One of the purposes is to provide the sample to Microsoft for troubleshooting reported issues with Visual Studio 2022. The sample uses the .NET Framework 4.6.1, ASP.NET MVC 5, and Angular 11. Currently, there is no any plan for upgrading the Areas Plugin structures and Angular, such as .NET Core 6 and Angular 14, respectively.
  
 The Angular parts of this sample application use the SystemJS module loader with which we can run the Visual Studio built-in debugger for TypeScript debugging. This feature depends on the UMD (Universal Module Definition) type of the Angular and related libraries. The Google Angular team has not provided the UMD JavaScript files since the later versions of Angular 12. If we upgrade the application to Angular 14 (or above later), we need to build own UMD library files from those released files using the *rolllup* tool and functionality.
