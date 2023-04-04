@@ -70,13 +70,10 @@ This website application needs "Areas" folder, even empty, under the site root p
 
 Especially during the initial setup, files copied from the Areas plugin project to the main web site Areas folder may sometimes not working. In this case, the "HTTP Error 500.0 - Internal Server Error" could also be rendered. You may try these steps:
 
-    - In the Areas plugin project, do "Clean Solution" and then "Rebuild Solution"
-    
-    - Re-run the *CopyModToWeb.bat* to copy and paste the Areas plugin files to main website.
-    
-    - In the main website project, do "Clean Solution", and then "Rebuild Solution".
-    
-    - If the issue still persists, in the main website project, delete the *bin* and *obj* folders, then rebuild the solution.
+    + In the Areas plugin project, do "Clean Solution" and then "Rebuild Solution"    
+    + Re-run the *CopyModToWeb.bat* to copy and paste the Areas plugin files to main website    
+    + In the main website project, do "Clean Solution", and then "Rebuild Solution"    
+    + If the issue still persists, in the main website project, delete the *bin* and *obj* folders, then rebuild the solution
 
 ### Related Info
 
