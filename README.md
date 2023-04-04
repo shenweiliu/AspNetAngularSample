@@ -66,7 +66,7 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
 ### Issues and Resolutions
 
-This website application needs "Areas" folder, even empty, under the site root path. In some cases, the "Areas" empty folder may be auto removed during source code transfer. If you do not perform the step of copying Areas plugin files with creating "Areas" folder before building the main site project, the "HTTP Error 500.0 - Internal Server Error" could occur immediately after starting to run the application. Adding the "Areas" folder into the site root and rebuild the solution could resolve the issue.
+This website application needs "Areas" folder, even empty, under the site root path. In some cases, the "Areas" empty folder may be auto removed during source code transfer. If you do not perform the step of copying Areas plugin files with creating "Areas" folder before building the main site project, the "HTTP Error 500.0 - Internal Server Error" could occur immediately after starting to run the application. Adding the "Areas" folder into the site root and rebuild the solution could resolve the issue. 
 
 Especially during the initial setup, files copied from the Areas plugin project to the main web site Areas folder may sometimes not working. In this case, the "HTTP Error 500.0 - Internal Server Error" could also be rendered. You may try these steps:
 
