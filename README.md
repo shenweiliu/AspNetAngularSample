@@ -6,17 +6,17 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
 1. Visual Studio 2019 or 2022 (any version should work but latest versions are recommended).
 
-2. [TypeScript 4.0 for Visual Studio](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-40) if the "4.0" folder is not in your *C:\Program Files (x86)\Microsoft SDKs\TypeScript\* path.
+2. [TypeScript 4.0 for Visual Studio](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-40) if the "4.0" folder is not in your *"C:\Program Files (x86)\Microsoft SDKs\TypeScript\"* path.
 
 3. [node.js](https://nodejs.org/en/) (recommended version 14.15.3 - version 15.xx or above may not be compatible with Angular CLI 11). The corresponding LTS version of the npm is auto installed globally.
 
 4. Install the Angular CLI 11 by running the command on the Command Prompt:
  
-`npm install -g @angular/cli@11.0.5`
+    `npm install -g @angular/cli@11.0.5`
 
 5. Install Gulp globally by running this command with Command Prompt:
  
-`npm install -g gulp`
+    `npm install -g gulp`
 
 ### Setting Up Projects
 
@@ -30,13 +30,13 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
     `gulp copyLibs`
 
-3. Open the solution, AspNet.Angular.Mod.sln, with the Visual Studio and rebuild it. NuGet packages will automatically be downloaded based on project settings.
+3. Open the solution, *AspNet.Angular.Mod.sln*, with the Visual Studio and rebuild it. NuGet packages will also automatically be downloaded.
 
 4. Open and edit the *CopyModToWeb.bat* file located in the *"{Your_Path}/AspNet_Angular_Mod/AspNet.Angular.Mod/"*. Replace the "{Your_Path}" with the path in which you set the sample application. 
 
 5. Copy built and source code files from the AspNet.Angular.Mod project to AspNet.Angular.Web project by running the *CopyModToWeb.bat*. This copy/paste operation is also needed for every build and code change if any files or code pieces are updated in the AspNet.Angular.Mod project later.
 
-6. Open the solution, AspNet.Angular.Web.sln, with the Visual Studio and rebuild it. NuGet packages will automatically be downloaded based on project settings.
+6. Open the solution, AspNet.Angular.Web.sln, with the Visual Studio and rebuild it. NuGet packages will also automatically be downloaded.
 
 6. Open the *C:\Windows\System32\drivers\etc\hosts* with the Notepad and add this line and then save the file:
 
@@ -46,7 +46,7 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
     - Add a new Application Pool with the name *"AspNetAngularWebPool"*, .NET CLR version *".NET CLR Version v4.0.30319"*, and Managed pipeline mode *"Integrated"*. 
     
-	- Add a new website with the Site name *"AspNetAngularWeb"*, Application pool *"AspNetAngularWebPool"* (from the dropdown), Physical path "{Your-loaction-for-AspNetAngularWeb-project}, IP address *"All Unassigned"* or *"127.0.0.1"*, and Host name *"AspNetAngularWeb"*. 
+	- Add a new website with the Site name *"AspNetAngularWeb"*, Application pool *"AspNetAngularWebPool"* (from the dropdown), Physical path *"{Your-loaction-for-AspNetAngularWeb-project}"*, IP address *"All Unassigned"* or *"127.0.0.1"*, and Host name *"AspNetAngularWeb"*. 
 
 8. "CMD" to the *AspNet.Angular.Web/angular-content* directory, build the Angular CLI output files for non-development environments:
 
