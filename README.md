@@ -56,13 +56,15 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
 1. If you run the application for debugging the AspNet.Angular.Mod project, you need to start the Visual Studio session with the *AspNet.Angular.Mod.sln*. Otherwise, you can start with the *AspNet.Angular.Web.sln*. Both AspNet.Angular.Web and AspNet.Angular.Mod projects use the same local IIS website with the "External Host" settings.
 
-2. Set any breakpoints for your debugging work either on ASP.NET C# or Angular TypeScript parts.
+2. If you immediately gets Server 500 error from IIS, then you need delete the bin and obj folders in the AspNet.Angular.Web project and rebuild the AspNet.Angular.Web solution with the Visual Studio.
 
-3. Select "Microsoft Edge" as the Web Server from the Visual Studio tool bar.
+3. Set any breakpoints for your debugging work either on ASP.NET C# or Angular TypeScript parts.
 
-4. Click the Web Server tool bar item or press F5 to run the debug instance. 
+4. Select "Microsoft Edge" as the Web Server from the Visual Studio tool bar.
 
-5. If you would like to browse the website without debugging the Angular TypeScript code, you can change the "AngularModuleLoader" value to "cli" in the *Web.config* file of the AspNet.Angular.Web project. You can then run the website either still with Visual Studio Web Server command or F5 (the ASP.NET server-side debugging for C# code is kept) or directly using the site URL with browsers (no debugging processes for both server-side and client-side code).  
+5. Click the Web Server tool bar item or press F5 to run the debug instance. 
+
+6. If you would like to browse the website without debugging the Angular TypeScript code, you can change the "AngularModuleLoader" value to "cli" in the *Web.config* file of the AspNet.Angular.Web project. You can then run the website either still with Visual Studio Web Server command or F5 (the ASP.NET server-side debugging for C# code is kept) or directly using the site URL with browsers (no debugging processes for both server-side and client-side code).   
 
 ### Related Info
 
