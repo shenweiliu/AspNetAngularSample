@@ -56,15 +56,24 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
 1. If you run the application for debugging the AspNet.Angular.Mod project, you need to start the Visual Studio session with the *AspNet.Angular.Mod.sln*. Otherwise, you can start with the *AspNet.Angular.Web.sln*. Both AspNet.Angular.Web and AspNet.Angular.Mod projects use the same local IIS website with the "External Host" settings.
 
-2. If you immediately gets Server 500 error from IIS, then you need delete the bin and obj folders in the AspNet.Angular.Web project and rebuild the AspNet.Angular.Web solution with the Visual Studio.
+2. Set any breakpoints for your debugging work either on ASP.NET C# or Angular TypeScript parts.2
 
-3. Set any breakpoints for your debugging work either on ASP.NET C# or Angular TypeScript parts.
+3. Select "Microsoft Edge" as the Web Server from the Visual Studio tool bar.
 
-4. Select "Microsoft Edge" as the Web Server from the Visual Studio tool bar.
+4. Click the Web Server tool bar item or press F5 to run the debug instance. 
 
-5. Click the Web Server tool bar item or press F5 to run the debug instance. 
+5. If you would like to browse the website without debugging the Angular TypeScript code, you can change the "AngularModuleLoader" value to "cli" in the *Web.config* file of the AspNet.Angular.Web project. You can then run the website either still with Visual Studio Web Server command or F5 (the ASP.NET server-side debugging for C# code is kept) or directly using the site URL with browsers (no debugging processes for both server-side and client-side code). 
 
-6. If you would like to browse the website without debugging the Angular TypeScript code, you can change the "AngularModuleLoader" value to "cli" in the *Web.config* file of the AspNet.Angular.Web project. You can then run the website either still with Visual Studio Web Server command or F5 (the ASP.NET server-side debugging for C# code is kept) or directly using the site URL with browsers (no debugging processes for both server-side and client-side code).   
+### Issues and Resolutions
+
+This website application needs "Areas" folder, even empty, under the site root path. In some cases, the "Areas" empty folder may be auto removed during source code transfer. If you do not perform the step of copying Areas plugin files with creating "Areas" folder before building the main site project, the "HTTP Error 500.0 - Internal Server Error" could occur immediately after starting to run the application. Adding the "Areas" folder into the site root and rebuild the solution could resolve the issue.
+
+Especially during the initial setup, files copied from the Areas plugin project to the main web site Areas folder may sometimes not working. In this case, the "HTTP Error 500.0 - Internal Server Error" could also be rendered. You may try these steps:
+
+    - In the Areas plugin project, do "Clean Solution" and then "Rebuild Solution"
+    - Re-run the *CopyModToWeb.bat* to copy and paste the Areas plugin files to main website.	
+    - In the main website project, do "Clean Solution", and then "Rebuild Solution".
+    - If the issue still persists, in the main website project, delete the *bin* and *obj* folders, then rebuild the solution.
 
 ### Related Info
 
