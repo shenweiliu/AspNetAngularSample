@@ -8,7 +8,7 @@ The ASP.NET MVC Areas plugin is a unique website development model for combinati
 
 2. [TypeScript 4.0 for Visual Studio](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.typescript-40) if the "4.0" folder is not in your *"C:\Program Files (x86)\Microsoft SDKs\TypeScript\"* path.
 
-3. [node.js](https://nodejs.org/en/): Recommended version 14.15.x - 14.21.x. Version 15.xx or above may not be compatible with Angular 11. If you have already had higher version installed, you may install the [Node Version Manager (nvm) for Windows](https://github.com/coreybutler/nvm-windows) to install multiple versions of the node.js and then use the version 14.x.x. for the sample application.  
+3. [node.js](https://nodejs.org/en/): Recommended version 14.15.x - 14.21.x. Version 15.xx or above may not be compatible with Angular 11 CLI. If you have already had higher version installed, you may install the [Node Version Manager (nvm) for Windows](https://github.com/coreybutler/nvm-windows) to have multiple versions of the node.js and then use the version 14.x.x. as current setting for the sample application.  
 
 4. Install the Angular CLI 11 by running the command on the Command Prompt:
  
