@@ -7,11 +7,8 @@ import { RouterModule } from '@angular/router';
 
 import { WebModule } from "./web/web.module";
 import { MdpModule } from './mdp/mdp.module';
-//import { JaxcModule } from './jaxc/jaxc.module';
-
 import { WebMainComponent } from './web/web-main.component';
 import { MdpMainComponent } from './mdp/mdp-main.component';
-//import { JaxcMainComponent } from './jaxc/jaxc-main.component';
 
 import { RouteCatchAllComponent } from './web/route-catch-all/route-catch-all.component';
 import { routes } from './app.routes';
